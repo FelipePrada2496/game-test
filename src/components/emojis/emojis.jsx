@@ -25,7 +25,10 @@ const movies = [
     export function random() {
         return Math.floor(Math.random() * movies.length);
     }
-
-    export const firstMovieName = movies[random()];
-
-    export default movies
+    
+    export function firstMovieName() {
+        const index = random();
+        return movies[index].name;
+    }
+    
+    export default movies; 

@@ -1,17 +1,12 @@
 import React from 'react';
-import movies from './emojis.jsx';
-import { firstMovieName } from './emojis.jsx'
 
-function Emoji() {
 
+function Emoji({ symbol }) {
     return (
-        <div>
-            <p>nombre: {firstMovieName.name}</p>
-            <p>Emoji: {firstMovieName.emoji}</p>
-
-        </div>
+        <span role="img" aria-label="emoji">{symbol}</span>
     );
-
 }
 
 export default Emoji;
+
+
